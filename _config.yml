@@ -2,7 +2,7 @@ title: CSS Advanced 2019
 email: mgospodinov1978@gmail.com
 description: Hi there!
 destination: docs
-baseurl: "" 
+baseurl: "/CSS-Advanced-08-11-2019" 
 url: "" 
 twitter_username: gospod1978
 github_username:  gospod1978
@@ -12,6 +12,7 @@ plugins:
   - jekyll-feed
 
 # exclude:
+# - docs
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
