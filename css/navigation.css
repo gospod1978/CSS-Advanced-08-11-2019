@@ -39,3 +39,11 @@
 .nav li.page-title-contacts a:before {
     content: '\f098';
 }
+
+.nav li.page-title-services a:before {
+    content: '\f4c4';
+}
+
+.nav li.page-title-home a:before {
+    content: '\f015';
+}

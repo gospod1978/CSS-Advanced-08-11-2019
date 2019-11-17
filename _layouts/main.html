@@ -18,27 +18,21 @@
                     <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
                     <p>{{ site.description }}</p>
                 </div>
+                
+                {% include navigation.html location="header" %}
 
-
-            <nav class="nav">
-                <ul>
-                    {% for page in site.pages %}   
-                      {% if page.title %}
-                      <li class="page-title-{{ page.title | slugify }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                      {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
-        </header>
+            </header>
 
         <main class="site-main">
             <h1>{{ page.title }}</h1>
             {{ content }}
 
-            <img src="{{ site.baseurl }}/images/baner.jpeg" alt="">
         </main>
 
         <footer class="site-footer">
+
+            {% include navigation.html location="footer" %}
+
 
             <p>{{ site.title }} &copy; All rights reserved!</p>
 
