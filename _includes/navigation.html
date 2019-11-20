@@ -1,16 +1,22 @@
-            <nav class="nav location-{{ include.location }}">
-                <ul>
-                    {% assign navigation_pages = site.pages | sort:"order" %}
+<nav class="nav location-{{ include.location }}">
+    <ul>
+        {% assign navigation_pages = site.pages | sort:"order" %}
 
-                    {% for page in navigation_pages %}   
-                      {% if page.title %}
-                      <li class="page-title-{{ page.title | slugify }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                      {% endif %}
-                    {% endfor %}
-                </ul>
+        {% for current_page in navigation_pages %}   
+            {% if current_page.title %}
 
-                {% if include.location == 'header' %}
+           
+            <li class="page-title-{{ current_page.title | slugify }}{% if current_page.url == page.url %} current-page{% endif %}">
+                <a href="{{ site.baseurl }}{{ current_page.url }}">{{ current_page.title }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+        {% if include.location == 'header' %}
                  tuka moga da dobavq neshto conkretno samo vav header 
-                {% endif %}
+        {% endif %}
 
-            </nav>
+</nav>
+            
+

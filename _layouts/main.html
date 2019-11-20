@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/fontawesome/css/all.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/scss/fontawesome/css/all.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">   
         <title>{{ site.title }}</title>
     </head>
-    <body>
+    <body class="page-{{ page.title | slugify }}">
 
         <div class="site">
 

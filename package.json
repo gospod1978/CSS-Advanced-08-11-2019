@@ -1,0 +1,30 @@
+{
+  "name": "my_project",
+  "version": "0.0.1",
+  "description": "my_project example",
+  "main": "test command:",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "gospod1978"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gospod1978/CSS-Advanced-08-11-2019.git"
+  },
+  "author": "gospod1978",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gospod1978/CSS-Advanced-08-11-2019/issues"
+  },
+  "homepage": "https://github.com/gospod1978/CSS-Advanced-08-11-2019#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-files-sync": "^0.3.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
